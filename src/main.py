@@ -1,10 +1,11 @@
 from window import Window
+import glfw
 
 if __name__ == "__main__":
     window = Window()
-    window.update()
+    while not glfw.window_should_close(window.window):
+        window.update()
 
-# GOAL
-# Window and Engine Abstraction
-# The Window Holds the Events System
-# The Engine Holds the Renderer
+
+# terminate the glfw process
+glfw.terminate()
