@@ -13,6 +13,8 @@ pyopengl = "*"
 glfw = "*"
 pyrr = "*"
 pillow = "*"
+imgui = {extras = ["glfw"],version = "*"}
+bimpy = "*"
 
 [requires]
 python_version = "3.8"
